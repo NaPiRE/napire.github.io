@@ -1,0 +1,20 @@
+title: NaPiRE
+description: >-
+  Naming the Pain in Requirements Engineering (NaPiRE) is a global,
+  practitioner-oriented survey initiative on the contemporary practices
+  and challenges in requirements engineering.
+
+remote_theme: pages-themes/cayman@v0.2.0
+plugins:
+  - jekyll-remote-theme
+
+show_downloads: false
+
+# Site navigation, rendered via _includes/nav.html (see header override)
+nav:
+  - title: Home
+    url: /
+  - title: Theory
+    url: /theory.html
+  - title: History
+    url: /history.html
