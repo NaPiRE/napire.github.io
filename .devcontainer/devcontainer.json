@@ -1,0 +1,20 @@
+{
+    "name": "Ruby and Jekyll Environment",
+    "image": "ghcr.io/julianfrattini/julianfrattini.github.io-dev:latest",
+    "remoteEnv": {
+        "BUNDLE_GEMFILE": "${containerWorkspaceFolder}/Gemfile"
+    },
+    "features": {
+        "ghcr.io/anthropics/devcontainer-features/claude-code:1.0": {}
+    },
+    "mounts": [
+        "source=claude-code-config-${devcontainerId},target=/root/.claude,type=volume"
+    ],
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-python.python"
+            ]
+        }
+    }
+}

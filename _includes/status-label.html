@@ -1,0 +1,12 @@
+{%- comment -%}
+  Renders a colored, bold label for a proposition's per-edition status.
+  Usage: {% include status-label.html status="New" %}
+  Supported values: New, Supported, Removed
+{%- endcomment -%}
+{%- case include.status -%}
+  {%- when "New" -%}{%- assign color = "#B5E61D" -%}
+  {%- when "Supported" -%}{%- assign color = "#7F82BB" -%}
+  {%- when "Updated" -%}{%- assign color = "#FFC90E" -%}
+  {%- when "Removed" -%}{%- assign color = "#EB3324" -%}
+{%- endcase -%}
+<span style="color: {{ color }}; font-weight: bold;">{{ include.status }}</span>

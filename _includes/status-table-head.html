@@ -1,0 +1,21 @@
+{%- comment -%}
+  Renders the shared colgroup/thead structure for a proposition status table.
+  Usage: {% include status-table-head.html %}
+  Pair with the "status-table" class on the enclosing <table> element.
+{%- endcomment -%}
+<colgroup>
+  <col class="status-table__col--id">
+  <col class="status-table__col--proposition">
+  <col class="status-table__col--status">
+  <col class="status-table__col--status">
+  <col class="status-table__col--status">
+</colgroup>
+<thead>
+  <tr>
+    <th>ID</th>
+    <th>Proposition</th>
+    <th>2012</th>
+    <th>2014</th>
+    <th>2024</th>
+  </tr>
+</thead>

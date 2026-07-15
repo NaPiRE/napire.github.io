@@ -10,3 +10,46 @@
 .site-nav .btn {
   margin: 0 0.3rem 0.3rem 0;
 }
+
+// Status table (see _includes/status-table-head.html and theory.md)
+$status-table-border-color: $table-border-color !default;
+$status-table-head-bg-color: #f3f6fa !default;
+$status-table-head-text-color: $body-text-color !default;
+$status-table-hover-bg-color: #f3f6fa !default;
+
+.status-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.status-table th,
+.status-table td {
+  padding: 0.5rem;
+  border: 1px solid $status-table-border-color;
+}
+
+.status-table th:nth-child(n+3),
+.status-table td:nth-child(n+3) {
+  text-align: center;
+}
+
+.status-table thead th {
+  background-color: $status-table-head-bg-color;
+  color: $status-table-head-text-color;
+}
+
+.status-table tbody tr:hover {
+  background-color: $status-table-hover-bg-color;
+}
+
+.status-table__col--id {
+  width: 6%;
+}
+
+.status-table__col--proposition {
+  width: 58%;
+}
+
+.status-table__col--status {
+  width: 12%;
+}

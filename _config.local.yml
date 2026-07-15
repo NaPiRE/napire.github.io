@@ -1,0 +1,16 @@
+# Local-only override for `jekyll serve`.
+#
+# _config.yml pulls the Cayman theme via remote_theme, which requires
+# network access to GitHub at build time. That fetch is blocked in the
+# devcontainer, so this file swaps it for the vendored jekyll-theme-cayman
+# gem instead (same theme, no network needed).
+#
+# Usage:
+#   bundle exec jekyll serve --config _config.yml,_config.local.yml
+#
+# Do not use this file for the production build (GitHub Pages only reads
+# _config.yml).
+
+remote_theme: null
+theme: jekyll-theme-cayman
+plugins: []
