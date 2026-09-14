@@ -694,7 +694,7 @@ Stopping the requirements analysis can occur for different reasons in practice.
       <td>Unilateral decisions by project leads are not a common reason for stopping requirements analysis.</td>
       <td></td>
       <td></td>
-      <td>{% include status-label.html status="Updated" %}</td>
+      <td>{% include status-label.html status="New" %}</td>
     </tr>
   </tbody>
 </table>
