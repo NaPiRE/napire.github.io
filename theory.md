@@ -111,13 +111,6 @@ Elicitation refers to one of the core activities in requirements engineering, wh
       <td></td>
       <td>{% include status-label.html status="New" %}</td>
     </tr>
-    <tr>
-      <td>P52</td>
-      <td>Requirements are elicited via experimentation with users.</td>
-      <td></td>
-      <td></td>
-      <td>{% include status-label.html status="New" %}</td>
-    </tr>
   </tbody>
 </table>
 
@@ -180,7 +173,7 @@ Documentation refers to another one of the core activities in requirements engin
       <td>Data models are documented semi-formally (e.g., using UML).</td>
       <td></td>
       <td>{% include status-label.html status="New" %}</td>
-      <td></td>
+      <td>{% include status-label.html status="Removed" %}</td>
     </tr>
     <tr>
       <td>P13</td>
@@ -190,8 +183,15 @@ Documentation refers to another one of the core activities in requirements engin
       <td>{% include status-label.html status="Supported" %}</td>
     </tr>
     <tr>
-      <td>P53</td>
+      <td>P52</td>
       <td>Requirements engineers have failed to document at least one requirement. </td>
+      <td></td>
+      <td></td>
+      <td>{% include status-label.html status="New" %}</td>
+    </tr>
+    <tr>
+      <td>P53</td>
+      <td>The information categories most commonly documented include architectural constraints, functional properties, goals, (business) rules, system behavior, technical interfaces, usage scenarios, user interfaces, and acceptance criteria.</td>
       <td></td>
       <td></td>
       <td>{% include status-label.html status="New" %}</td>
@@ -202,8 +202,10 @@ Documentation refers to another one of the core activities in requirements engin
 The NaPiRE initiative conjectured the following explanations for the propositions:
 
 - E3 (for P6, P7, P11): Free-form and constraint textual requirements are sufficient for many contexts such as in agile projects where they only act as reminders for further conversations.
+- E4 (for P8 and P12): Use case models and data models might not often be shared with non-technical stakeholders. Hence, requirements engineers can use well-known semi-formal description techniques such as entity-relationship diagrams or UML to document them.
 - E5 (for P13): The quantification depends on the type of non-functional requirement. Performance is rather documented quantitatively while maintainability is rather documented non-quantitatively.
-- E7 (for P53): Requirements knowledge is often tacit; engineers who are deeply familiar with the system may not perceive documentation as necessary.
+- E29 (for P52): Requirements knowledge is often tacit; engineers who are deeply familiar with the system may not perceive documentation as necessary.
+- E30 (for P53): Requirements documentation records what the system is to do, the context it must fit into, and the criteria by which it is judged: the functional core (functional properties, system behavior, usage scenarios, goals), the interfaces to users and other systems, the constraints and rules under which the system is built, and the acceptance criteria that close the loop to validation.
 
 ### Requirements Changes
 
@@ -313,6 +315,7 @@ To guarantee that a system meets its requirements, it is necessary to align them
 The NaPiRE initiative conjectured the following explanations for the propositions:
 
 - E11 (P21-P23): To fully align tests with requirements, organizational and artifact-based measures are necessary to link requirements and tests.
+- E12 (P24): Often, there are no system models that are complete or formal enough to derive tests.
 
 ### Standards
 
@@ -605,7 +608,7 @@ Communication is key to requirements engineering, both with external stakeholder
 
 The NaPiRE initiative conjectured the following explanations for the propositions:
 
-- E8 (P54–P57): Close and frequent interaction within the project team and with the customer promotes shared understanding and enables effective requirements elicitation and validation.
+- 31 (P54–P57): Close and frequent interaction within the project team and with the customer promotes shared understanding and enables effective requirements elicitation and validation.
 
 ### Handling Missing Information
 
@@ -626,7 +629,7 @@ Oftentimes, requirements engineering practitioners encounter lack of knowledge o
 
 The NaPiRE initiative conjectured the following explanations for the propositions:
 
-- E9 (P58): Direct consultation of the customer is the most reliable way to resolve ambiguities and avoid incorrect assumptions propagating into downstream development.
+- E32 (P58): Direct consultation of the customer is the most reliable way to resolve ambiguities and avoid incorrect assumptions propagating into downstream development.
 
 ### Reaction to Unknown Documentation Benefit
 
@@ -654,7 +657,7 @@ The benefit of effort invested into the requirements engineering phase may not a
 
 The NaPiRE initiative conjectured the following explanations for the propositions:
 
-- E10 (P59-P60): Practitioners distinguish between current utility and long-term essentialness; the perception that a document is essential for the project outweighs the lack of an immediately identifiable beneficiary.
+- E33 (P59-P60): Practitioners distinguish between current utility and long-term essentialness; the perception that a document is essential for the project outweighs the lack of an immediately identifiable beneficiary.
 
 ### Non-Functional Requirements
 
@@ -677,7 +680,7 @@ security, and usability.</td>
 
 The NaPiRE initiative conjectured the following explanations for the propositions:
 
-- E12 (P61): These NFR classes correspond to widely recognised quality attribute categories, making them more likely to be systematically addressed during requirements engineering.
+- E34 (P61): These NFR classes correspond to widely recognised quality attribute categories, making them more likely to be systematically addressed during requirements engineering.
 
 ### Stopping Criteria
 
@@ -687,22 +690,15 @@ Stopping the requirements analysis can occur for different reasons in practice.
   {% include status-table-head.html %}
   <tbody>
     <tr>
-      <td>P61</td>
-      <td>Requirements analysis is stopped when the project team collectively agrees that sufficient time has been invested.</td>
-      <td></td>
-      <td></td>
-      <td>{% include status-label.html status="New" %}</td>
-    </tr>
-    <tr>
       <td>P62</td>
       <td>Unilateral decisions by project leads are not a common reason for stopping requirements analysis.</td>
       <td></td>
       <td></td>
-      <td>{% include status-label.html status="New" %}</td>
+      <td>{% include status-label.html status="Updated" %}</td>
     </tr>
   </tbody>
 </table>
 
 The NaPiRE initiative conjectured the following explanations for the propositions:
 
-- E13 (P62-P63): Collective agreement distributes the decision to stop requirements analysis across the team, reflecting shared ownership of the RE process; unilateral pressure from project leads is not accepted as a legitimate stopping criterion.
+- E35 (P62): Collective agreement distributes the decision to stop requirements analysis across the team, reflecting shared ownership of the RE process; unilateral pressure from project leads is not accepted as a legitimate stopping criterion.
