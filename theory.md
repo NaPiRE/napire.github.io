@@ -101,8 +101,8 @@ Elicitation refers to one of the core activities in requirements engineering, wh
       <td>P50</td>
       <td>Requirements are elicited and/or refined in several iterations.</td>
       <td></td>
+      <td></td>
       <td>{% include status-label.html status="New" %}</td>
-      <td>{% include status-label.html status="Supported" %}</td>
     </tr>
     <tr>
       <td>P51</td>
